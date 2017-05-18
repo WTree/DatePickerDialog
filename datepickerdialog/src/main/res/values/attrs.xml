@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="MyDatePicker">
+        <!-- The first year (inclusive), for example "1940". -->
+        <attr name="startYear" format="integer" />
+        <!-- The last year (inclusive), for example "2010". -->
+        <attr name="endYear" format="integer" />
+        <!-- Whether the spinners are shown. -->
+        <attr name="spinnersShown" format="boolean" />
+        <!-- Whether the calendar view is shown. -->
+        <attr name="calendarViewShown" format="boolean" />
+        <!-- The minimal date shown by this calendar view in mm/dd/yyyy format. -->
+        <attr name="minDate" format="string" />
+        <!-- The minimal date shown by this calendar view in mm/dd/yyyy format. -->
+        <attr name="maxDate" format="string" />
+        <!-- @hide The layout of the time picker. -->
+        <attr name="layout" />
+    </declare-styleable>
+
+</resources>

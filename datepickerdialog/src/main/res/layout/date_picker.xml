@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:gravity="center">
+    <LinearLayout android:id="@+id/pickers"
+        android:layout_width="wrap_content"
+        android:layout_height="168dp"
+        android:layout_marginRight="24dip"
+        android:layout_marginLeft="24dp"
+        android:maxWidth="296dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+
+        <!-- Year -->
+        <NumberPicker
+            android:theme="@style/AppTheme.Picker"
+            android:id="@+id/year"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_marginLeft="16dip"
+            android:layout_marginRight="16dip"
+            android:layout_height="wrap_content"
+
+            android:focusable="true"
+            android:divider="#ff3181"
+            android:showDividers="middle"
+            android:focusableInTouchMode="true"
+            />
+
+        <!-- Month -->
+        <NumberPicker
+            android:theme="@style/AppTheme.Picker"
+            android:id="@+id/month"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_marginLeft="16dip"
+            android:layout_marginRight="16dip"
+            android:layout_height="wrap_content"
+            android:divider="#ff3181"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            />
+        <!-- Day -->
+        <NumberPicker
+            android:theme="@style/AppTheme.Picker"
+            android:id="@+id/day"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_marginLeft="16dip"
+            android:layout_marginRight="16dip"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:divider="#ff3181"
+            android:focusableInTouchMode="true"
+            />
+
+    </LinearLayout>
+    <!-- calendar view -->
+    <CalendarView
+        android:id="@+id/calendar_view"
+        android:layout_width="245dip"
+        android:layout_height="280dip"
+        android:layout_marginLeft="22dip"
+        android:layout_weight="1"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:visibility="gone"
+        />
+</LinearLayout>
